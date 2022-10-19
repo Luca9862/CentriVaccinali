@@ -3,8 +3,12 @@ package centrivaccinali;
 import cittadini.CittadinoVaccinato;
 import eventiavversi.EventoAvverso;
 import gestionefile.GestoreFile;
-
+import date.GestioneDate;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 /**
@@ -295,7 +299,8 @@ public class CentroVaccinale {
                 System.out.print("CODICE FISCALE: ");
                 String cf = in.nextLine();
                 System.out.print("DATA: ");
-                String data = in.nextLine();
+                String d = in.nextLine();
+                Date data = GestioneDate.convert(d);
                 System.out.print("VACCINO: ");
                 String vaccino = in.nextLine();
                 System.out.print("ID vaccinazione: ");
@@ -305,7 +310,7 @@ public class CentroVaccinale {
                 String nomecentro = in.nextLine();
 
                 if(CentroVaccinale.centroEsiste(nomecentro)){
-                    CittadinoVaccinato vaccinato = new CittadinoVaccinato(nomevaccinato, cf, data, vaccino, id);
+                    CittadinoVaccinato vaccinato = new CittadinoVaccinato(nomevaccinato, cf, data , vaccino, id);
                     for(int i = 0; i < listacentri.size(); i++) {
                         if (nomecentro.equals(CentroVaccinale.listacentri.get(i).getNome())) {
                             if (CittadinoVaccinato.idOccupato(id, CentroVaccinale.listacentri.get(i))) {

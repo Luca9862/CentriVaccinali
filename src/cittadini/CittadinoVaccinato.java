@@ -2,6 +2,8 @@ package cittadini;
 
 import centrivaccinali.CentroVaccinale;
 
+import java.util.Date;
+
 /**
  *
  * Classe per la gestione dei cittadini che sono stati vaccinati
@@ -23,7 +25,7 @@ public class CittadinoVaccinato{
     /**
      * Data dell'oggetto CittadinoVaccinato
      */
-    String data;
+    Date data;
 
     /**
      * Tipo vaccino dell'oggetto CittadinoVaccinato
@@ -45,7 +47,7 @@ public class CittadinoVaccinato{
      * @param id id vaccinazione
      */
 
-    public CittadinoVaccinato(String nomeVaccinato, String cf, String dataVaccino, String tipoVaccino, short id) {
+    public CittadinoVaccinato(String nomeVaccinato, String cf, Date dataVaccino, String tipoVaccino, short id) {
         nome = nomeVaccinato;
         codicefiscale = cf;
         data = dataVaccino;
@@ -82,7 +84,7 @@ public class CittadinoVaccinato{
      *
      */
 
-    public String getDate(){return this.data; }
+    public Date getDate(){return this.data; }
 
     /**
      *

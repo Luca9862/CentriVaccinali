@@ -3,6 +3,8 @@ package gestionefile;
 import centrivaccinali.CentroVaccinale;
 import cittadini.CittadinoRegistrato;
 import cittadini.CittadinoVaccinato;
+import date.GestioneDate;
+
 import java.io.*;
 
 /**
@@ -124,7 +126,7 @@ public class GestoreFile {
                 while (riga != null) {
                     String[] dato = riga.split("-");
                     short id = Short.parseShort(dato[4]);
-                    CittadinoVaccinato vaccinato = new CittadinoVaccinato(dato[0], dato[1], dato[2], dato[3], id);
+                    CittadinoVaccinato vaccinato = new CittadinoVaccinato(dato[0], dato[1], GestioneDate.convert(dato[2]), dato[3], id);
                     CentroVaccinale.listacentri.get(i).listavaccinati.add(vaccinato);
                     riga = reader.readLine();
                 }
