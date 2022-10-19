@@ -13,7 +13,6 @@ import java.util.Scanner;
  * Questa classe contiene anche il metodo main della sottoapplicazione Cittadino
  *
  * @author Luca Canali
- * @author Ivan Tonolli
  */
 
 public class Cittadino {

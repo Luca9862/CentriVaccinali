@@ -12,7 +12,6 @@ import java.util.Scanner;
  * Classe per la gestione dei centri vaccinali e dei relativi file
  *
  * @author Luca Canali
- * @author Ivan Tonolli
  */
 
 public class CentroVaccinale {

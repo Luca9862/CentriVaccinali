@@ -8,7 +8,6 @@ import java.util.Scanner;
  * Questa classe contiene il metodo main del progetto
  *
  * @author Luca Canali
- * @author Ivan Tonolli
  */
 public class CentriVaccinali {
     public static void main(String [] args) {

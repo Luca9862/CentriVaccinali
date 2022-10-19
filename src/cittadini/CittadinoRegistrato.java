@@ -10,7 +10,6 @@ import java.util.Scanner;
  * Classe per la gestione dei cittadini che si registrano nel sistema
  *
  * @author Luca Canali
- * @author Ivan Tonolli
  */
 
 public class CittadinoRegistrato {

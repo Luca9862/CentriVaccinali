@@ -7,7 +7,6 @@ import centrivaccinali.CentroVaccinale;
  * Classe per la gestione dei cittadini che sono stati vaccinati
  *
  * @author Luca Canali
- * @author Ivan Tonolli
  */
 
 public class CittadinoVaccinato{

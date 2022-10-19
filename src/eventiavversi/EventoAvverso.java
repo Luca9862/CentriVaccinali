@@ -5,7 +5,6 @@ package eventiavversi;
  * Questa classe rappresenta un Evento Avverso come un oggetto
  *
  * @author Luca Canali
- * @author Ivan Tonolli
  *
  */
 

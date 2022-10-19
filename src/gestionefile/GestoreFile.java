@@ -11,7 +11,6 @@ import java.io.*;
  * e la gestione della relazione tra oggetti e file
  *
  * @author Luca Canali
- * @author Ivan Tonolli
  */
 
 public class GestoreFile {
