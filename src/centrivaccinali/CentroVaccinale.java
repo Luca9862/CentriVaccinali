@@ -295,7 +295,7 @@ public class CentroVaccinale {
                 System.out.println("INSERIRE I DATI DEL CITTADINO COME INDICATO");
                 System.out.println("(premere invio dopo ogni comando digitato)");
                 System.out.print("NOME e COGNOME: ");
-                String nomevaccinato = in.nextLine();
+                String nomeV = in.nextLine();
                 System.out.print("CODICE FISCALE: ");
                 String cf = in.nextLine();
                 System.out.print("DATA: ");
@@ -307,12 +307,12 @@ public class CentroVaccinale {
                 short id = in.nextShort();
                 in.nextLine();
                 System.out.println("INSERIRE NOME COMPLETO DEL CENTRO IN CUI REGISTRARE IL CITTADINO: ");
-                String nomecentro = in.nextLine();
+                String centroV = in.nextLine();
 
-                if(CentroVaccinale.centroEsiste(nomecentro)){
-                    CittadinoVaccinato vaccinato = new CittadinoVaccinato(nomevaccinato, cf, data , vaccino, id);
+                if(CentroVaccinale.centroEsiste(centroV)){
+                    CittadinoVaccinato vaccinato = new CittadinoVaccinato(nomeV, cf, data , vaccino, id);
                     for(int i = 0; i < listacentri.size(); i++) {
-                        if (nomecentro.equals(CentroVaccinale.listacentri.get(i).getNome())) {
+                        if (centroV.equals(CentroVaccinale.listacentri.get(i).getNome())) {
                             if (CittadinoVaccinato.idOccupato(id, CentroVaccinale.listacentri.get(i))) {
                                 System.out.println("ERRORE: IdVaccinazione occupato");
                                 System.out.println("Ritorno al menù, iniziare nuovamente la registrazione");
