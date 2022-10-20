@@ -1,0 +1,25 @@
+-creata classe enum Vaccino.java e sostituito la vecchia implementazione con le stringhe
+-sostituita la vecchia implementazione delle date grazie agli oggetti di tipo DATE in sostituzione delle STRING
+-modificata la JAVADOC delle classi relative al progetto di Laboratorio A 2020/2021
+-aggiunta JAVADOC per la classe Vaccino.java
+-implementata la prima GUI per la Home (da terminare)
+
+TERMINARE/AGGIORNARE LABORATORIO A:
+-trovare una soluzione per il calcolo delle medie degli eventi avversi
+-creare una sorta di login per gli operatori vaccinali che accedono al sistema
+-dare la possibilità agli operatori di registrarsi a sistema*
+-aggiornare il jar del progetto
+-implementare il nuovo file.bath per l'avvio senza aprire Intellij
+
+LABORATORIO B:
+-creare la GUI che sarà suddivisa così:
+    .La pagina HOME, nella quale si potrà scegliere le modalità di accesso
+    .Tutte le altre sotto-pagine per i sotto-menù della applicazione
+
+
+
+
+
+
+
+*:OPZIONALE/DA DECIDERE

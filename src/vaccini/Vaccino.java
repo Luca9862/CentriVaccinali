@@ -31,12 +31,12 @@ public enum Vaccino {
      * @return String
      */
     public static Vaccino toVaccino(String nome){
-        return switch (nome) {
-            case "Moderna" -> MODERNA;
-            case "Pfizer" -> PFIZER;
-            case "Astrazeneca" -> ASTRAZENECA;
-            case "Johnson&Johnson" -> JOHNSONEJHONSON;
-            default -> null;
-        };
+        switch (nome) {
+            case "Moderna": return MODERNA;
+            case "Pfizer": return PFIZER;
+            case "Astrazeneca":  return ASTRAZENECA;
+            case "Johnson&Johnson":return JOHNSONEJHONSON;
+            default: return null;
+        }
     }
 }
