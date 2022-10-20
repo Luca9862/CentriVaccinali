@@ -5,13 +5,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class GestioneDate {
-    public static Date convert(String startDateString){
+    public static Date convert(String dateString){
         DateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
-        Date data = new Date("1/1/1975"); //deprecato, da revisionare
+        Date data = new Date();
         try
         {
-            data = (Date)formatter.parse(startDateString);
-            return data;
+            data = (Date) formatter.parse(dateString);
         }
         catch (Exception e)
         {e.printStackTrace();}
