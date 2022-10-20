@@ -5,10 +5,6 @@ import eventiavversi.EventoAvverso;
 import gestionefile.GestoreFile;
 import date.GestioneDate;
 import vaccini.Vaccino;
-
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
