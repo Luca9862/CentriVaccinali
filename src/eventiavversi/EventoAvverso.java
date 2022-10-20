@@ -27,7 +27,7 @@ public class EventoAvverso {
      */
     public EventoAvverso(String nomeEvento, int severitaEvento){
         nome = nomeEvento;
-        if(severitaEvento < 5) {
+        if(severitaEvento < 5 && severitaEvento > 0) {
             severita = severitaEvento;
         }
         else severita = 5;
