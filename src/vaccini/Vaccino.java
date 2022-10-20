@@ -12,4 +12,15 @@ public enum Vaccino {
             default: return "";
         }
     }
+
+    public static Vaccino toVaccino(String nome){
+        switch (nome){
+            case "Moderna": return MODERNA;
+            case "Pfizer": return PFIZER;
+            case "Astrazeneca": return ASTRAZENECA;
+            case "Johnson&Johnson": return JOHNSONEJHONSON;
+            default: return null;
+
+        }
+    }
 }

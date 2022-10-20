@@ -1,6 +1,7 @@
 package cittadini;
 
 import centrivaccinali.CentroVaccinale;
+import vaccini.Vaccino;
 
 import java.util.Date;
 
@@ -30,7 +31,7 @@ public class CittadinoVaccinato{
     /**
      * Tipo vaccino dell'oggetto CittadinoVaccinato
      */
-    String vaccino;
+    Vaccino vaccino;
 
     /**
      * Id univoco dell'oggetto CittadinoVaccinato
@@ -47,7 +48,7 @@ public class CittadinoVaccinato{
      * @param id id vaccinazione
      */
 
-    public CittadinoVaccinato(String nomeVaccinato, String cf, Date dataVaccino, String tipoVaccino, short id) {
+    public CittadinoVaccinato(String nomeVaccinato, String cf, Date dataVaccino, Vaccino tipoVaccino, short id) {
         nome = nomeVaccinato;
         codicefiscale = cf;
         data = dataVaccino;
@@ -93,7 +94,7 @@ public class CittadinoVaccinato{
      *
      */
 
-    public String getVaccino() {
+    public Vaccino getVaccino() {
         return this.vaccino;
     }
 
