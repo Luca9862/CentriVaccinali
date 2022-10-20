@@ -4,6 +4,8 @@ import cittadini.CittadinoVaccinato;
 import eventiavversi.EventoAvverso;
 import gestionefile.GestoreFile;
 import date.GestioneDate;
+import vaccini.Vaccino;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -310,7 +312,7 @@ public class CentroVaccinale {
                 String centroV = in.nextLine();
 
                 if(CentroVaccinale.centroEsiste(centroV)){
-                    CittadinoVaccinato vaccinato = new CittadinoVaccinato(nomeV, cf, data , vaccino, id);
+                    CittadinoVaccinato vaccinato = new CittadinoVaccinato(nomeV, cf, data , Vaccino.toVaccino(vaccino), id);
                     for(int i = 0; i < listacentri.size(); i++) {
                         if (centroV.equals(CentroVaccinale.listacentri.get(i).getNome())) {
                             if (CittadinoVaccinato.idOccupato(id, CentroVaccinale.listacentri.get(i))) {
